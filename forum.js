@@ -129,7 +129,7 @@ function signout() {
     .then((response) => response.json())
     .then((data) => {
       alert(data.message);
-      if (data.success) window.location.replace("home.php");
+      if (data.success) window.location.replace("index.php");
     })
     .catch((error) => console.log(error));
 }

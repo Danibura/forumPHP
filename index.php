@@ -55,7 +55,7 @@
             </div>
             <div id="filtri">
                 <h2>Filter by:</h2>
-                <form action="home.php" method="GET">
+                <form action="index.php" method="GET">
                     Gender:
                     <input type="radio" name="sesso" value="maschio">Male
                     <input type="radio" name="sesso" value="femmina">Female
