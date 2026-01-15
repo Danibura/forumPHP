@@ -1,0 +1,166 @@
+#content {
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+#titolo {
+  color: rgb(0, 102, 255);
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 40px;
+}
+
+#tuoiMessaggi {
+  font-size: small;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 32px;
+}
+
+#titoloMessaggio {
+  width: 1200px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+#testoMessaggio {
+  width: 1200px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+#inviaMes {
+  background-color: rgb(0, 102, 255);
+  color: white;
+  padding: 20px 20px;
+  cursor: pointer;
+  border: 0px;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+#divAggiungi {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#titoloMU {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 26px;
+  color: rgb(0, 102, 255);
+}
+
+.m {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 1200px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.titoloM {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
+  margin-top: 4px;
+  margin-bottom: 0px;
+  border: 0px;
+  height: 30px;
+  padding: 2px;
+}
+
+.testoM {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 50px;
+  border: 0px;
+}
+
+#spazioSotto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#filtri h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 26px;
+  color: rgb(0, 102, 255);
+}
+
+#filtri form {
+  font-size: 20px;
+}
+
+#filtri input {
+  font-size: 18px;
+}
+
+#filtri button {
+  background-color: rgb(0, 102, 255);
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 0px;
+  width: fit-content;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.bottoniM {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bottoniM button {
+  background: transparent;
+  width: 30px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.intestazione {
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  justify-content: space-between;
+}
+
+#divRisposta{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-top: 0px;
+
+}
+
+#divRisposta h2{
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+}
+
+#divRisposta input{
+  height: 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.idSopra{
+    display: flex;
+  flex-wrap: wrap;
+  gap:40px;
+}

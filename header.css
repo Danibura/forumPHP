@@ -1,0 +1,34 @@
+#header {
+  background-color: rgb(0, 102, 255);
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  font-size: 80px;
+  padding: 40px 100px;
+  display: flex;
+  align-items: center;
+}
+
+#personaBottone {
+  position: absolute;
+  right: 100px;
+  scale: 3;
+}
+
+#signout {
+  position: absolute;
+  right: 100px;
+  scale: 3;
+  color: white;
+  border: 0px;
+  background: transparent;
+  cursor: pointer;
+}
+
+body {
+  margin: 0px;
+}
+
+a {
+  color: white;
+}
