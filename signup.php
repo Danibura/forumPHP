@@ -31,7 +31,7 @@
         </form><br><br>
         <div id="giaAccount">
             Already have an account?
-            <a href="login.php">Signup</a> 
+            <a href="login.php">Login</a> 
         </div>
     </div>
 
