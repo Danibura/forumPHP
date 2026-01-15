@@ -6,7 +6,7 @@
     $conn= new mysqli($host, $user, $psw, $db);
     if(mysqli_connect_errno())
     {
-        $risposta=["success"=>false, "message"=>"Errore di connessione"];
+        $risposta=["success"=>false, "message"=>"Connection error"];
         echo json_encode($risposta);
         exit;
     }

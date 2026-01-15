@@ -5,7 +5,7 @@
         extract($_POST);
 
         if(!isset($_SESSION["utente"]) || !isset($_SESSION["utente"]["ID_utente"])){
-            $risposta=["success"=>false, "message"=>"Utente non autenticato"];
+            $risposta=["success"=>false, "message"=>"User not authenticated"];
             echo json_encode($risposta);
             exit;
         }
@@ -16,9 +16,9 @@
             $sql="INSERT INTO messaggi(titolo, messaggio, id_utente) VALUES ('$titoloMessaggio', '$testoMessaggio', $idUtente)";
             $ris=$conn->query($sql);
                 if(!$ris)
-                    $risposta=["success"=>false, "message"=>"Errore durante l'inserimento del messaggio"];
+                    $risposta=["success"=>false, "message"=>"Error"];
                 else
-                    $risposta=["success"=>true, "message"=>"Messaggio inserito correttamente"];
+                    $risposta=["success"=>true, "message"=>"Success"];
             echo json_encode($risposta);
         }
         else
@@ -29,14 +29,14 @@
                 $sql="INSERT INTO messaggi(titolo, messaggio, id_utente, id_messaggioRisposta) VALUES ('$titoloMessaggio', '$testoMessaggio', $idUtente, $idRisposta)";
                 $ris=$conn->query($sql);
                 if(!$ris)
-                    $risposta=["success"=>false, "message"=>"Errore durante l'inserimento del messaggio"];
+                    $risposta=["success"=>false, "message"=>"Error"];
                 else
-                    $risposta=["success"=>true, "message"=>"Messaggio inserito correttamente"];
+                    $risposta=["success"=>true, "message"=>"Success"];
                 echo json_encode($risposta);
             }
             else
             {
-                $risposta=["success"=>false, "message"=>"L'id della risposta non è stato trovato"];
+                $risposta=["success"=>false, "message"=>"Response ID not found"];
                 echo json_encode($risposta);
             }     
         }

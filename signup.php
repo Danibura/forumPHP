@@ -16,13 +16,13 @@
         <form onsubmit="return gestisciSignup(event)">
             <label>Nickname:</label>
             <input type="text" name="nickname" required>  <br><br>
-            <label>Nome:</label>
+            <label>Name:</label>
             <input type="text" name="nome" required> <span id="erroreNome"></span> <br><br>
-            <label>Cognome:</label>
+            <label>Surname:</label>
             <input type="text" name="cognome" required> <span id="erroreCognome"></span> <br><br>
-            <label>Sesso:</label>
-            <input type="radio" name="sesso" value="maschio" required>Maschio
-            <input type="radio" name="sesso" value="femmina" required>Femmina <br><br>
+            <label>Gender:</label>
+            <input type="radio" name="sesso" value="maschio" required>Male
+            <input type="radio" name="sesso" value="femmina" required>Female <br><br>
             <label>Mail:</label>
             <input type="email" name="mail" required> <br><br>
             <label>Password:</label>
@@ -30,8 +30,8 @@
             <input type="submit" value="Invia" name="invia">
         </form><br><br>
         <div id="giaAccount">
-            Hai gia un account?
-            <a href="login.php">Accedi</a> 
+            Already have an account?
+            <a href="login.php">Signup</a> 
         </div>
     </div>
 

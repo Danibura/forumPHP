@@ -7,9 +7,9 @@
         $sql="DELETE FROM messaggi WHERE ID_messaggio=$ID_messaggio";
         $ris=$conn->query($sql);
         if(!$ris)
-            $risposta=["success"=>false, "message"=>"Errore durante l'eliminazione del messaggio"];
+            $risposta=["success"=>false, "message"=>"Error"];
         else
-            $risposta=["success"=>true, "message"=>"Messaggio eliminato correttamente"];
+            $risposta=["success"=>true, "message"=>"Success"];
         echo json_encode($risposta);
         session_abort();
     }

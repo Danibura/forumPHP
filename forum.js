@@ -66,9 +66,8 @@ function aggiungiMessaggio(event) {
 }
 
 function eliminaMessaggio(ID_messaggio) {
-  let conferma = confirm("Vuoi davvero eliminare il messaggio?");
-  if(conferma)
-  {
+  let conferma = confirm("Are you sure to delete the message?");
+  if (conferma) {
     let formData = new FormData();
     formData.append("ID_messaggio", ID_messaggio);
     fetch("api/elimina.php", {

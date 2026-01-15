@@ -22,8 +22,8 @@
             <input type="submit" value="Invia" name="invia">
         </form><br><br>
         <div id="noAccount">
-            Non hai ancora un account?
-            <a href="signup.php">Registrati</a>
+            Don't have an account yet?
+            <a href="signup.php">Register</a>
         </div>
     </div>
 </body>

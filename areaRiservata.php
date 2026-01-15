@@ -11,21 +11,21 @@
 <body>
     <?php require "header.php"   ?>
     <div id="content">
-        <h1 id="titolo">Area riservata</h1>
+        <h1 id="titolo">Reserved area</h1>
         <form onsubmit="aggiungiMessaggio(event)">
             <div id="divAggiungi">
                 <input type="text" placeholder="Titolo" id="titoloMessaggio" name="titoloMessaggio">
                 <textarea  placeholder="Inserisci il tuo messaggio" id="testoMessaggio" name="testoMessaggio"></textarea>
                 <div id="divRisposta">
-                    <h2>Risposta: </h2>
+                    <h2>Response: </h2>
                     <input type="number" id="risposta" name="idRisposta">
                 </div>
-                <button type="submit" id="inviaMes">Aggiungi messaggio</button>
+                <button type="submit" id="inviaMes">Add a message</button>
             </div>
         </form> 
         <div id="spazioSotto">
             <div>
-            <h2 id="titoloMU">Messaggi degli utenti</h2>
+            <h2 id="titoloMU">User's messages</h2>
             <?php
                 session_start();
                 require "config.php";
@@ -98,19 +98,19 @@
             ?>
             </div>
             <div id="filtri">
-                <h2>Filtra per:</h2>
+                <h2>Filter by:</h2>
                 <form action="areaRiservata.php" method="GET">
-                    Sesso:
-                    <input type="radio" name="sesso" value="maschio">Maschio
-                    <input type="radio" name="sesso" value="femmina">Femmina
+                    Gender:
+                    <input type="radio" name="sesso" value="maschio">Male
+                    <input type="radio" name="sesso" value="femmina">Female
                     <br> <br>
-                    Data inizio:
+                    First date:
                     <input type="date" name="dataInizio"> <br> <br>
-                    Data fine:
+                    Last date:
                     <input type="date" name="dataFine"> <br> <br>
                     Nickname: 
                     <input type="text" name="nickname"> <br> <br>
-                    <button type="submit">Applica filtri</button>
+                    <button type="submit">Apply filters</button>
                 </form>
             </div>
 

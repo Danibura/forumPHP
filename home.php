@@ -14,7 +14,7 @@
         <h1 id="titolo">Home</h1>
             <div id="spazioSotto">
             <div>
-                <h2 id="titoloMU">Messaggi degli utenti</h2>
+                <h2 id="titoloMU">User's messages</h2>
                 <?php
                     require "config.php";
                     extract($_GET);
@@ -54,19 +54,19 @@
                 ?>
             </div>
             <div id="filtri">
-                <h2>Filtra per:</h2>
+                <h2>Filter by:</h2>
                 <form action="home.php" method="GET">
-                    Sesso:
-                    <input type="radio" name="sesso" value="maschio">Maschio
-                    <input type="radio" name="sesso" value="femmina">Femmina
+                    Gender:
+                    <input type="radio" name="sesso" value="maschio">Male
+                    <input type="radio" name="sesso" value="femmina">Female
                     <br> <br>
-                    Data inizio:
+                    First date:
                     <input type="date" name="dataInizio"> <br> <br>
-                    Data fine:
+                    Last date:
                     <input type="date" name="dataFine"> <br> <br>
                     Nickname: 
                     <input type="text" name="nickname"> <br> <br>
-                    <button type="submit">Applica filtri</button>
+                    <button type="submit">Apply filters</button>
                 </form>
             </div>
         </div>

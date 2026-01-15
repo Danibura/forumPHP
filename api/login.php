@@ -9,15 +9,15 @@
             $passwordDB=$row["passwordUtente"];
             if(password_verify($passwordUtente, $passwordDB))
             {
-                $risposta=["success"=>true, "message"=>"Accesso effettuato correttamente"];
+                $risposta=["success"=>true, "message"=>"Login successful"];
                 session_start();
                 $_SESSION["utente"]=$row;
             }
             else
-                $risposta=["success"=>false, "message"=>"Password errata"];
+                $risposta=["success"=>false, "message"=>"Incorrect password"];
         }
         else
-            $risposta=["success"=>false, "message"=>"Email non trovata"];
+            $risposta=["success"=>false, "message"=>"Email not found"];
 
         
         echo json_encode($risposta);
